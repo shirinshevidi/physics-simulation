@@ -1,0 +1,27 @@
+//-  selected_element : it is the element number , which the user is proposing. so for each iteration it should be updtaed.
+//-  system_report : it is the outcome of each simulation iteration: it has two main situations: 1. confirmation 2. collapsing : asking for selecting another element or supporting. 
+//   system_report also shoulde be updated for each element simulation.
+//-   system_memory: it is the one working with memory of structural agent. it stores the successful reults of all iterations . so in each iteration we add, not update, the result to the system_memory
+
+//# scenario: first we remove element0 with support of element 1, remove element1, and then remove element2.
+
+{
+    "selected_element": "element0",
+    "system_report":
+     [
+        "element1 falls after removing element0",
+        "element2 falls as a consequence",
+        "select another element to remove or the robot supports element1 while uou remove element0"
+
+    ],
+    "system_memory" :
+    [
+        "element1 is supported",
+        "element0 is removed",
+      //  next steps will add>    "element1 is remove",  "element2 is supported",
+  
+
+    ]
+
+
+}
